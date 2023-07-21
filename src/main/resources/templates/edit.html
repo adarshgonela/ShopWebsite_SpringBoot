@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.com">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> AD MART</title>
+   <script type="text/javascript" src ="https://kit.fontawesome.com/0faddc1af8.js" crossorigin="anonymous"></script>
+  
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ 
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+<style type="text/css">
+
+input {
+position:relative;
+left:300px;
+	font-size: 50px;
+}
+label {
+position:relative;
+left:300px;
+	font-size: 50px;
+}
+h1 {
+position:relative;
+left:300px;
+	font-size: 50px;
+}
+button {
+position:relative;
+left:300px;
+	font-size: 50px;
+}
+</style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/">AD MART</a></h1>
+
+    </div>
+  </header>
+<br>
+<br>
+<br>
+
+
+<h1 >Editing Available Items</h1>
+<form  th:action="@{/save}" method="post" th:object="${item}">
+ 
+ <input type="hidden" name="id" th:value="${item.id}"/>
+   
+ 
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" placeholder="enter Item Name" th:value="${item.name}">
+    </div>
+     <div class="mb-3">
+    <label for="quantity" class="form-label">quantity</label>
+    <input type="text" class="form-control" name="quantity" placeholder="enter Item Quantiyy" th:value="${item.quantity}">
+    </div>
+    
+     <div class="mb-3">
+    <label for="price" class="form-label">price</label>
+    <input type="text" class="form-control" name="price" placeholder="enter Item price" th:value="${item.price}">
+    </div>
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
+ 

@@ -1,0 +1,122 @@
+ <!-- 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>New Register</h1>
+
+<form class="col-md-4 offset md-4" th:action="@{/save}" method="post">
+  <div class="mb-3">
+    <label for="id" class="form-label">id</label>
+    <input type="text" class="form-control" name="id">
+    </div>
+  
+  <div class="mb-3">
+    <label for="name" class="form-label">name</label>
+    <input type="text" class="form-control" name="name">
+    </div>
+     <div class="mb-3">
+    <label for="quantity" class="form-label">quantity</label>
+    <input type="text" class="form-control" name="quantity">
+    </div>
+    
+     <div class="mb-3">
+    <label for="price" class="form-label">price</label>
+    <input type="text" class="form-control" name="price">
+    </div>
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</body>
+</html>
+ -->
+ 
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> AD MART</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ 
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/">AD MART</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+
+           
+         
+          <li><a href="/availableitems">Available Items</a></li>
+          <li><a href="/shop_register">Add new Items</a></li>
+          <li><a href="/mycart">My Cart</a></li>
+
+          <li><a href="/" class="getstarted">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+<br>
+<br>
+<br>
+
+
+<h1 class="container my-5 col-md-4">Add New items</h1>
+<div class="container my-5 col-md-7" >
+<form class="col-md-4 offset md-4" th:action="@{/save}" method="post">
+  <div class="mb-3">
+    <label for="id" class="form-label">Item Code</label>
+    <input type="text" class="form-control" name="id" placeholder="enter Item Code">
+    </div>
+  
+  <div class="mb-3">
+    <label for="name" class="form-label">name</label>
+    <input type="text" class="form-control" name="name" placeholder="enter Item Name">
+    </div>
+     <div class="mb-3">
+    <label for="quantity" class="form-label">quantity</label>
+    <input type="text" class="form-control" name="quantity" placeholder="enter Item Quantiyy">
+    </div>
+    
+     <div class="mb-3">
+    <label for="price" class="form-label">price</label>
+    <input type="text" class="form-control" name="price" placeholder="enter Item price">
+    </div>
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+ 
